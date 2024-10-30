@@ -10,8 +10,8 @@ async function Images() {
 
   return (
     <div className="flex flex-wrap gap-4">
-      {images.map((image, idx) => (
-        <div key={image.id + "-" + idx} className="flex w-48 flex-col">
+      {images.map((image) => (
+        <div key={image.id} className="flex w-48 flex-col">
           <img src={image.url} alt="image" className="h-40 self-center" />
           <span>{image.name}</span>
         </div>
